@@ -1,11 +1,11 @@
 shinyUI(pageWithSidebar(
-    headerPanel("Web AB Test"),
+    headerPanel("Experiment Results and Statistical Significance"),
     sidebarPanel(
-        numericInput('control_loads', 'control_loads', 0, min=0, step=1),
-        numericInput('control_clicks', 'control_clicks', 0, min=0, step=1),
+        numericInput('control_loads', 'control participants', 0, min=0, step=1),
+        numericInput('control_clicks', 'control conversions', 0, min=0, step=1),
     #numericInput('control_thx', 'control_thx', 0, min=0, step=1),
-    numericInput('test_loads', 'test_loads', 0, min=0, step=1),
-    numericInput('test_clicks', 'test_clicks', 0, min=0, step=1),
+    numericInput('test_loads', 'test participants', 0, min=0, step=1),
+    numericInput('test_clicks', 'test conversions', 0, min=0, step=1),
     #numericInput('test_thx', 'test_thx', 0, min=0, step=1),
     actionButton("goButton", "Go!")
     ),
