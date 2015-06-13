@@ -16,9 +16,9 @@ shinyUI(pageWithSidebar(
         verbatimTextOutput("significant_t_test"),
         h4('Statisically Significant Chi-Square'),
         verbatimTextOutput("significant_chi_square"),
-        h4('Control Click-through-rate'),
+        h4('Control Rate'),
         verbatimTextOutput("control_click_rate"),
-        h4('Test Click-through-rate'),
+        h4('Test Rate'),
         verbatimTextOutput("test_click_rate"),
         plotOutput('newHist'),
         plotOutput('boxPlot')
